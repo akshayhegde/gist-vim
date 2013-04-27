@@ -19,7 +19,7 @@ if !executable('curl')
   finish
 endif
 
-let s:configfile = expand('~/.gist-vim')
+let s:configfile = expand('~/.cache/gist-vim')
 
 if !exists('g:github_user')
   let s:system = function(get(g:, 'webapi#system_function', 'system'))
